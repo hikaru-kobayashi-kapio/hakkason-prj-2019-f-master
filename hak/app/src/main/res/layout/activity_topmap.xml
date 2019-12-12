@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutMode="clipBounds"
+        android:visibility="visible"
+        tools:context="com.example.hak.TopMapsActivity" />
+    <!--app:uiZoomControls="true"-->
+    <!--app:layout_gravity="bottom|left"-->
+
+</LinearLayout>
+
+    <Button
+        android:id="@+id/option"
+        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_height="@android:dimen/notification_large_icon_width"
+        android:layout_gravity="right"
+        android:background="@drawable/mapbutton"
+        android:drawableBottom="@android:drawable/ic_menu_preferences"
+        android:paddingBottom="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="@android:dimen/notification_large_icon_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_gravity="bottom|left"
+                android:layout_weight="1"
+                android:background="@drawable/mapbutton"
+                android:drawableBottom="@android:drawable/ic_menu_edit"
+                android:drawingCacheQuality="auto"
+                android:paddingBottom="15dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@android:dimen/notification_large_icon_width"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="@android:dimen/notification_large_icon_width"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_gravity="bottom|left"
+                android:layout_weight="1"
+                android:background="@drawable/mapbutton"
+                android:drawableBottom="@android:drawable/ic_menu_search"
+                android:drawingCacheQuality="auto"
+                android:paddingBottom="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

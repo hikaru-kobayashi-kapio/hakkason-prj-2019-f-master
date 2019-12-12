@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="button">Button</string>
+    <string name="button2">Button</string>
+    <string name="Submit">Button</string>
+    <string name="Post">Button</string>
+    <string name="Map">Button</string>
+</resources>
